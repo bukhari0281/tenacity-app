@@ -3,30 +3,30 @@
 /* Design System - Custom Properties */
 :root {
   /* Primary Colors (from logo) */
-  --primary: #0B7A9F;
-  --primary-light: #5BA8C4;
-  --primary-lighter: #A8D5E2;
-  
+  --primary: #0b7a9f;
+  --primary-light: #5ba8c4;
+  --primary-lighter: #a8d5e2;
+
   /* Neutral Colors */
-  --white: #FFFFFF;
-  --light-gray: #F7F9FC;
-  --gray: #64748B;
-  --dark: #1E293B;
-  --navy: #0F172A;
-  
+  --white: #ffffff;
+  --light-gray: #f7f9fc;
+  --gray: #64748b;
+  --dark: #1e293b;
+  --navy: #0f172a;
+
   /* Accent Gradients */
-  --gradient-primary: linear-gradient(135deg, #0B7A9F 0%, #5BA8C4 100%);
-  --gradient-hero: linear-gradient(180deg, #FFFFFF 0%, #F0F9FC 100%);
-  
+  --gradient-primary: linear-gradient(135deg, #0b7a9f 0%, #5ba8c4 100%);
+  --gradient-hero: linear-gradient(180deg, #ffffff 0%, #f0f9fc 100%);
+
   /* Shadows */
   --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
   --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
   --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
-  
+
   /* Background */
-  --background: #FFFFFF;
-  --foreground: #1E293B;
+  --background: #ffffff;
+  --foreground: #1e293b;
 }
 
 /* Tailwind v4 Theme Configuration */
@@ -38,11 +38,11 @@
   --color-gray: var(--gray);
   --color-dark: var(--dark);
   --color-navy: var(--navy);
-  
-  --font-sans: 'Plus Jakarta Sans', 'Inter', system-ui, sans-serif;
-  --font-heading: 'Plus Jakarta Sans', system-ui, sans-serif;
-  --font-body: 'Inter', system-ui, sans-serif;
-  
+
+  --font-sans: "Plus Jakarta Sans", "Inter", system-ui, sans-serif;
+  --font-heading: "Plus Jakarta Sans", system-ui, sans-serif;
+  --font-body: "Inter", system-ui, sans-serif;
+
   --radius-2xl: 1rem;
   --radius-3xl: 1.5rem;
   --radius-4xl: 2rem;
@@ -62,7 +62,12 @@ body {
 }
 
 /* Typography */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-heading);
   font-weight: 700;
   line-height: 1.2;
@@ -163,7 +168,8 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Animations */
 @keyframes float {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0);
   }
   50% {
@@ -172,7 +178,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @keyframes pulse-glow {
-  0%, 100% {
+  0%,
+  100% {
     box-shadow: 0 0 0 0 rgba(11, 122, 159, 0.4);
   }
   50% {
@@ -191,6 +198,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
+  height: 8px;
 }
 
 ::-webkit-scrollbar-track {
@@ -204,6 +212,16 @@ h1, h2, h3, h4, h5, h6 {
 
 ::-webkit-scrollbar-thumb:hover {
   background: var(--primary);
+}
+
+/* Hide scrollbar utility */
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-none {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
 /* Mobile Bottom Nav Safe Area */

@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import MobileNav from "@/components/layout/MobileNav";
 import Footer from "@/components/layout/Footer";
+import WhatsAppFloat from "@/components/layout/WhatsAppFloat";
 
 const plusJakarta = Plus_Jakarta_Sans({
   variable: "--font-heading",
@@ -47,13 +48,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="id" className="scroll-smooth">
-      <body
-        className={`${plusJakarta.variable} ${inter.variable} antialiased`}
-      >
+      <body className={`${plusJakarta.variable} ${inter.variable} antialiased`}>
         <Navbar />
         <main className="bg-white">{children}</main>
         <Footer />
         <MobileNav />
+        <WhatsAppFloat />
       </body>
     </html>
   );

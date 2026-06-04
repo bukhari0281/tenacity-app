@@ -46,7 +46,7 @@ export default function FinalCTA() {
           {/* CTA Button */}
           <motion.div variants={fadeInUp} className="mb-12">
             <a
-              href="https://wa.me/6281234567890"
+              href="https://wa.me/6285117116753"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-3 bg-white text-[#0B7A9F] px-8 py-4 rounded-full font-semibold text-lg shadow-2xl hover:shadow-[0_0_40px_rgba(255,255,255,0.3)] hover:scale-105 transition-all duration-300 animate-pulse-glow"

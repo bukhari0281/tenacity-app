@@ -38,7 +38,7 @@ export default function Stats() {
           variants={staggerContainer}
           className="grid grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8"
         >
-          {statsData.map((stat, index) => {
+          {statsData.map((stat) => {
             const Icon = iconMap[stat.id];
             return (
               <motion.div
