@@ -93,15 +93,15 @@ export default function Footer() {
                         <ul className="space-y-4">
                             <li className="flex items-center gap-3 text-gray-400 text-sm">
                                 <Mail className="w-5 h-5 text-[#5BA8C4] flex-shrink-0" />
-                                <span>hello@tenacity.id</span>
+                                <span>jasatenacity@gmail.com</span>
                             </li>
                             <li className="flex items-center gap-3 text-gray-400 text-sm">
                                 <Phone className="w-5 h-5 text-[#5BA8C4] flex-shrink-0" />
-                                <span>+62 812-3456-7890</span>
+                                <span>+62 851-1711-6753</span>
                             </li>
                             <li className="flex items-center gap-3 text-gray-400 text-sm">
                                 <Clock className="w-5 h-5 text-[#5BA8C4] flex-shrink-0" />
-                                <span>Senin-Minggu (24/7)</span>
+                                <span>Senin-Jum'at</span>
                             </li>
                         </ul>
 
